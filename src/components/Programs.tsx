@@ -34,7 +34,7 @@ const Programs: React.FC = () => {
       title: "Python Programming",
       description: "Code with the Friendly Python Snake! Learn the coding language that powers YouTube and Instagram.",
       color: "from-green-400 to-green-600",
-      animation: "animate-slide"
+      animation: "animate-float"
     },
     {
       id: 'web-design',
@@ -42,7 +42,7 @@ const Programs: React.FC = () => {
       title: "Web Design",
       description: "Make Beautiful Web Pages! Design amazing websites that look awesome on phones and computers.",
       color: "from-pink-400 to-pink-600",
-      animation: "animate-pulse"
+      animation: "animate-float"
     },
     {
       id: 'robotics',
@@ -50,7 +50,7 @@ const Programs: React.FC = () => {
       title: "Robotics Programming",
       description: "Build and Control Cool Robots! Create robots that can move, light up, and follow your commands.",
       color: "from-cyan-400 to-cyan-600",
-      animation: "animate-shake"
+      animation: "animate-float"
     }
   ];
 
@@ -106,29 +106,9 @@ const Programs: React.FC = () => {
           animation: float 3s ease-in-out infinite;
         }
         
-        .animate-slide {
-          animation: slide 3s ease-in-out infinite;
-        }
-        
-        .animate-shake {
-          animation: shake 3s ease-in-out infinite;
-        }
-        
         @keyframes float {
           0%, 100% { transform: translateY(0); }
           50% { transform: translateY(-10px); }
-        }
-        
-        @keyframes slide {
-          0% { transform: translateX(0); }
-          50% { transform: translateX(10px); }
-          100% { transform: translateX(0); }
-        }
-        
-        @keyframes shake {
-          0%, 100% { transform: rotate(0deg); }
-          25% { transform: rotate(5deg); }
-          75% { transform: rotate(-5deg); }
         }
       `}</style>
     </section>
