@@ -12,6 +12,7 @@ import FAQ from './pages/FAQ';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
 import { MessageCircle } from 'lucide-react';
+import PromoPopup from './components/PromoPopup';
 
 function App() {
   return (
@@ -28,11 +29,12 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<Terms />} />
-            <Route path="*" element={<Navigate to="/\" replace />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
         <Footer />
         <Toaster position="top-right" />
+        <PromoPopup />
         
         {/* WhatsApp Floating Button */}
         <a
