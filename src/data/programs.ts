@@ -5,11 +5,7 @@ export interface Program {
   title: string;
   description: string;
   icon: any;
-  color: {
-    primary: string;
-    secondary: string;
-    accent: string;
-  };
+  color: string;
   ageRange: string;
   duration: string;
   skillLevel: string;
@@ -31,11 +27,7 @@ export const programs: Program[] = [
     title: 'ICT Fundamentals',
     description: 'Master the basics of computers and technology through hands-on learning and exciting projects.',
     icon: Monitor,
-    color: {
-      primary: 'blue',
-      secondary: 'orange',
-      accent: 'yellow'
-    },
+    color: 'blue',
     ageRange: '5-8 years',
     duration: '8 weeks',
     skillLevel: 'Beginner',
@@ -49,11 +41,7 @@ export const programs: Program[] = [
     title: 'Scratch Programming',
     description: 'Learn to code through fun, visual programming using Scratch to create games and animations.',
     icon: Cat,
-    color: {
-      primary: 'orange',
-      secondary: 'blue',
-      accent: 'green'
-    },
+    color: 'orange',
     ageRange: '8-12 years',
     duration: '10 weeks',
     skillLevel: 'Beginner to Intermediate',
@@ -67,11 +55,7 @@ export const programs: Program[] = [
     title: 'HTML/CSS Programming',
     description: 'Build your own websites and learn the fundamentals of web development.',
     icon: Globe,
-    color: {
-      primary: 'purple',
-      secondary: 'yellow',
-      accent: 'pink'
-    },
+    color: 'purple',
     ageRange: '10-15 years',
     duration: '12 weeks',
     skillLevel: 'Intermediate',
@@ -85,11 +69,7 @@ export const programs: Program[] = [
     title: 'Python Programming',
     description: 'Learn Python programming through practical projects and fun exercises.',
     icon: 'PythonIcon',
-    color: {
-      primary: 'green',
-      secondary: 'red',
-      accent: 'blue'
-    },
+    color: 'green',
     ageRange: '12-15 years',
     duration: '14 weeks',
     skillLevel: 'Intermediate to Advanced',
@@ -103,11 +83,7 @@ export const programs: Program[] = [
     title: 'Web Design',
     description: 'Learn to create beautiful and responsive websites using modern design principles and tools.',
     icon: Palette,
-    color: {
-      primary: 'pink',
-      secondary: 'teal',
-      accent: 'purple'
-    },
+    color: 'pink',
     ageRange: '12-15 years',
     duration: '12 weeks',
     skillLevel: 'Intermediate',
@@ -121,11 +97,7 @@ export const programs: Program[] = [
     title: 'Robotics Programming',
     description: 'Learn to build and program robots using modern robotics platforms.',
     icon: Bot,
-    color: {
-      primary: 'cyan',
-      secondary: 'red',
-      accent: 'blue'
-    },
+    color: 'cyan',
     ageRange: '10-15 years',
     duration: '12 weeks',
     skillLevel: 'Intermediate',
