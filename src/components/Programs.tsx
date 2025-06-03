@@ -76,28 +76,27 @@ const Programs: React.FC = () => {
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">{program.title}</h3>
                 <p className="text-gray-600 mb-6">{program.description}</p>
                 
-                <div className="mt-6 flex justify-between items-center">
-                  <div className="space-x-2">
-                    <HashLink 
-                      to="/student-registration#student-registration-top" 
-                      className="inline-flex items-center justify-center px-4 py-2 bg-[#FF914D] text-white rounded-full hover:bg-[#e67e3d] transition-colors"
-                    >
-                      Enroll Now
-                    </HashLink>
-                    <Link 
-                      to={`/programs/${program.id}`}
-                      className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
-                    >
-                      Learn More
-                    </Link>
-                  </div>
-                  <div className="flex space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
-                        <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                      </svg>
-                    ))}
-                  </div>
+                <div className="mt-6 flex flex-col sm:flex-row gap-2">
+                  <HashLink 
+                    to="/student-registration#student-registration-top" 
+                    className="inline-flex items-center justify-center px-6 py-3 bg-[#FF914D] text-white rounded-full hover:bg-[#e67e3d] transform transition-all duration-300 hover:scale-105 hover:shadow-lg font-bold"
+                  >
+                    Enroll Now
+                  </HashLink>
+                  <Link 
+                    to={`/programs/${program.id}`}
+                    className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transform transition-all duration-300 hover:scale-105 hover:shadow-lg font-bold"
+                  >
+                    Learn More
+                  </Link>
+                </div>
+                
+                <div className="flex justify-center mt-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                    </svg>
+                  ))}
                 </div>
               </div>
             </div>
