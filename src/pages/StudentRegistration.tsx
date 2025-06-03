@@ -118,15 +118,15 @@ const StudentRegistration: React.FC = () => {
   }
 
   return (
-    <div id="student-registration-top" className="min-h-screen bg-gray-50 pt-24 pb-16">
+    <div id="student-registration-top" className="min-h-screen pt-24 pb-16 bg-gradient-to-br from-green-50 via-white to-blue-50 animate-gradient">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">Student Registration</h1>
           
-          <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Student Information */}
-              <div className="bg-blue-50 p-6 rounded-lg mb-8">
+              <div className="bg-blue-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Student Information</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -136,7 +136,7 @@ const StudentRegistration: React.FC = () => {
                       name="student_name"
                       value={formData.student_name}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -149,7 +149,7 @@ const StudentRegistration: React.FC = () => {
                       onChange={handleChange}
                       min="3"
                       max="18"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -160,7 +160,7 @@ const StudentRegistration: React.FC = () => {
                       name="dob"
                       value={formData.dob}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -170,7 +170,7 @@ const StudentRegistration: React.FC = () => {
                       name="grade"
                       value={formData.grade}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     >
                       <option value="">Select grade level</option>
@@ -196,7 +196,7 @@ const StudentRegistration: React.FC = () => {
                       name="current_school"
                       value={formData.current_school}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -232,7 +232,7 @@ const StudentRegistration: React.FC = () => {
               </div>
 
               {/* Parent Information */}
-              <div className="bg-green-50 p-6 rounded-lg mb-8">
+              <div className="bg-green-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Parent/Guardian Information</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -242,7 +242,7 @@ const StudentRegistration: React.FC = () => {
                       name="parent_name"
                       value={formData.parent_name}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -252,7 +252,7 @@ const StudentRegistration: React.FC = () => {
                       name="relationship"
                       value={formData.relationship}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     >
                       <option value="">Select relationship</option>
@@ -271,7 +271,7 @@ const StudentRegistration: React.FC = () => {
                       name="parent_phone"
                       value={formData.parent_phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -282,7 +282,7 @@ const StudentRegistration: React.FC = () => {
                       name="parent_whatsapp"
                       value={formData.parent_whatsapp}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -293,7 +293,7 @@ const StudentRegistration: React.FC = () => {
                       name="parent_email"
                       value={formData.parent_email}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -304,7 +304,7 @@ const StudentRegistration: React.FC = () => {
                       value={formData.home_address}
                       onChange={handleChange}
                       rows={3}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     ></textarea>
                   </div>
@@ -312,7 +312,7 @@ const StudentRegistration: React.FC = () => {
               </div>
 
               {/* Program Selection */}
-              <div className="bg-purple-50 p-6 rounded-lg mb-8">
+              <div className="bg-purple-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Program Selection</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -321,7 +321,7 @@ const StudentRegistration: React.FC = () => {
                       name="course_interest"
                       value={formData.course_interest}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     >
                       <option value="">Select course</option>
@@ -339,7 +339,7 @@ const StudentRegistration: React.FC = () => {
                       name="preferred_schedule"
                       value={formData.preferred_schedule}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     >
                       <option value="">Select schedule</option>
@@ -421,7 +421,7 @@ const StudentRegistration: React.FC = () => {
               </div>
 
               {/* Additional Information */}
-              <div className="bg-yellow-50 p-6 rounded-lg mb-8">
+              <div className="bg-yellow-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Additional Information</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -487,7 +487,7 @@ const StudentRegistration: React.FC = () => {
                       value={formData.experience_details}
                       onChange={handleChange}
                       rows={3}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       placeholder="If you have coding experience, please provide details"
                     ></textarea>
                   </div>
@@ -498,7 +498,7 @@ const StudentRegistration: React.FC = () => {
                       value={formData.special_requirements}
                       onChange={handleChange}
                       rows={3}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       placeholder="Any special needs or requirements"
                     ></textarea>
                   </div>
@@ -508,7 +508,7 @@ const StudentRegistration: React.FC = () => {
                       name="hear_about_us"
                       value={formData.hear_about_us}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     >
                       <option value="">Select option</option>
@@ -524,7 +524,7 @@ const StudentRegistration: React.FC = () => {
               </div>
 
               {/* Payment Information */}
-              <div className="bg-pink-50 p-6 rounded-lg mb-8">
+              <div className="bg-pink-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Payment Information</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -533,7 +533,7 @@ const StudentRegistration: React.FC = () => {
                       name="payment_method"
                       value={formData.payment_method}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     >
                       <option value="">Select payment method</option>
@@ -548,7 +548,7 @@ const StudentRegistration: React.FC = () => {
                       name="payment_plan"
                       value={formData.payment_plan}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     >
                       <option value="">Select payment plan</option>
