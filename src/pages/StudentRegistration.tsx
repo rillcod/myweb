@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Users, Check } from 'lucide-react';
+import { Users, Check, Sparkles } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { toast } from 'sonner';
 import { useNavigate } from 'react-router-dom';
@@ -63,14 +63,12 @@ const StudentRegistration: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Validate date of birth
     if (!formData.dob) {
       toast.error('Please enter a valid date of birth');
       return;
     }
 
     try {
-      // Format the date to ISO string for PostgreSQL
       const formattedData = {
         ...formData,
         dob: new Date(formData.dob).toISOString()
@@ -95,19 +93,23 @@ const StudentRegistration: React.FC = () => {
 
   if (formSubmitted) {
     return (
-      <div className="min-h-screen bg-gray-50 pt-24 pb-16">
+      <div className="min-h-screen pt-24 pb-16 bg-gradient-to-br from-green-50 via-white to-blue-50 animate-gradient">
         <div className="container mx-auto px-4">
-          <div className="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8 text-center">
-            <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Check className="w-10 h-10 text-green-600" />
+          <div className="max-w-xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 text-center transform animate-fade-in">
+            <div className="relative">
+              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-slow">
+                <Check className="w-10 h-10 text-green-600" />
+              </div>
+              <Sparkles className="absolute top-0 right-0 w-6 h-6 text-yellow-400 animate-pulse" />
+              <Sparkles className="absolute bottom-0 left-0 w-6 h-6 text-yellow-400 animate-pulse" />
             </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Registration Successful!</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 animate-slide-up">Registration Successful!</h3>
+            <p className="text-gray-600 mb-6 animate-slide-up delay-100">
               Thank you for registering with Rillcod Academy! We've received your information and will contact you shortly with next steps.
             </p>
             <button
               onClick={() => navigate('/')}
-              className="px-6 py-3 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition-colors duration-300"
+              className="px-6 py-3 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition-all duration-300 transform hover:scale-105 animate-slide-up delay-200"
             >
               Return to Home
             </button>
@@ -121,12 +123,15 @@ const StudentRegistration: React.FC = () => {
     <div id="student-registration-top" className="min-h-screen pt-24 pb-16 bg-gradient-to-br from-green-50 via-white to-blue-50 animate-gradient">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">Student Registration</h1>
+          <div className="text-center mb-8 animate-fade-in">
+            <h1 className="text-3xl font-bold text-gray-800 mb-2">Student Registration</h1>
+            <p className="text-gray-600">Join our exciting tech learning journey!</p>
+          </div>
           
-          <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-xl">
+          <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-xl animate-slide-up">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Student Information */}
-              <div className="bg-blue-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
+              <div className="bg-blue-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Student Information</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -232,7 +237,7 @@ const StudentRegistration: React.FC = () => {
               </div>
 
               {/* Parent Information */}
-              <div className="bg-green-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
+              <div className="bg-green-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Parent/Guardian Information</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -312,7 +317,7 @@ const StudentRegistration: React.FC = () => {
               </div>
 
               {/* Program Selection */}
-              <div className="bg-purple-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
+              <div className="bg-purple-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Program Selection</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -421,7 +426,7 @@ const StudentRegistration: React.FC = () => {
               </div>
 
               {/* Additional Information */}
-              <div className="bg-yellow-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
+              <div className="bg-yellow-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Additional Information</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -524,7 +529,7 @@ const StudentRegistration: React.FC = () => {
               </div>
 
               {/* Payment Information */}
-              <div className="bg-pink-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
+              <div className="bg-pink-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Payment Information</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -560,7 +565,7 @@ const StudentRegistration: React.FC = () => {
               </div>
 
               {/* Terms and Submit */}
-              <div className="space-y-6">
+              <div className="space-y-6 animate-fade-in">
                 <div className="flex items-start">
                   <input
                     type="checkbox"
@@ -587,7 +592,7 @@ const StudentRegistration: React.FC = () => {
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition-colors duration-300"
+                  className="w-full px-6 py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
                 >
                   Submit Registration
                 </button>
@@ -596,6 +601,52 @@ const StudentRegistration: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradient 15s ease infinite;
+        }
+        
+        .animate-bounce-slow {
+          animation: bounce 2s ease-in-out infinite;
+        }
+        
+        .animate-fade-in {
+          animation: fadeIn 0.6s ease-out forwards;
+        }
+        
+        .animate-slide-up {
+          animation: slideUp 0.6s ease-out forwards;
+        }
+        
+        @keyframes gradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        
+        @keyframes bounce {
+          0%, 100% { transform: translateY(-5%); }
+          50% { transform: translateY(5%); }
+        }
+        
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+          from {
+            transform: translateY(20px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      `}</style>
     </div>
   );
 };
