@@ -14,16 +14,16 @@ const Hero: React.FC = () => {
       </div>
       
       {/* Student with Computer */}
-      <div className="absolute bottom-0 right-0 lg:right-20 w-1/3 max-w-xs md:max-w-sm lg:max-w-md h-auto z-2">
+      <div className="absolute top-20 right-0 lg:right-20 w-1/3 max-w-xs md:max-w-sm lg:max-w-md h-auto z-2">
         <div className="relative w-full h-full">
+          <img 
+            src="https://images.pexels.com/photos/8535230/pexels-photo-8535230.jpeg"
+            alt="African Child Learning STEM"
+            className="w-full h-auto rounded-lg shadow-2xl"
+          />
           <div className="absolute top-[-60px] right-[20px] bg-white rounded-2xl px-4 py-2 shadow-lg transform rotate-[-5deg] z-10">
             <p className="text-xl font-bold text-[#FF914D]">I Love Coding!</p>
           </div>
-          <img 
-            src="https://images.pexels.com/photos/4963436/pexels-photo-4963436.jpeg"
-            alt="Happy Child Learning to Code"
-            className="w-full h-auto rounded-lg shadow-2xl"
-          />
         </div>
       </div>
       

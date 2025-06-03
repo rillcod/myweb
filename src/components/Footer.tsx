@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                 href="https://facebook.com/rillcodacademy" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FF914D] transition-colors duration-300"
+                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FF914D] transition-all duration-300 transform hover:scale-110"
               >
                 <Facebook className="w-5 h-5" />
               </a>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                 href="https://instagram.com/rillcodacademy" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FF914D] transition-colors duration-300"
+                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FF914D] transition-all duration-300 transform hover:scale-110"
               >
                 <Instagram className="w-5 h-5" />
               </a>
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                 href="https://twitter.com/rillcodacademy" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FF914D] transition-colors duration-300"
+                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FF914D] transition-all duration-300 transform hover:scale-110"
               >
                 <Twitter className="w-5 h-5" />
               </a>
@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
                   href="https://wa.me/2348116600091"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-300 mt-2"
+                  className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105"
                 >
                   <span className="mr-2">💬</span> WhatsApp Us
                 </a>

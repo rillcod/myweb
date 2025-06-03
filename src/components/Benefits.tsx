@@ -37,14 +37,14 @@ const Benefits: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefits.map((benefit, index) => (
             <div 
               key={index}
-              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               <div className="flex flex-col items-center text-center">
-                <div className="mb-4">
+                <div className="mb-4 bg-orange-100 p-4 rounded-full">
                   {benefit.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">

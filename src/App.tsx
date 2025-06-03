@@ -9,6 +9,8 @@ import StudentRegistration from './pages/StudentRegistration';
 import AdminDashboard from './pages/AdminDashboard';
 import ProgramDetails from './pages/ProgramDetails';
 import FAQ from './pages/FAQ';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Terms from './pages/Terms';
 import { MessageCircle } from 'lucide-react';
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/programs/:id" element={<ProgramDetails />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<Terms />} />
             <Route path="*" element={<Navigate to="/\" replace />} />
           </Routes>
         </main>
