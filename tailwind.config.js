@@ -11,6 +11,7 @@ export default {
         'bounce-slow': 'bounce 3s infinite',
         'slide-up': 'slideUp 0.5s ease-out',
         'fade-in': 'fadeIn 0.5s ease-out',
+        'scale': 'scale 0.3s ease-in-out',
       },
       keyframes: {
         gradient: {
@@ -39,6 +40,14 @@ export default {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        scale: {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+          '100%': { transform: 'scale(1)' },
+        },
+      },
+      backdropBlur: {
+        xs: '2px',
       },
     },
   },
