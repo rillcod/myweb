@@ -12,7 +12,6 @@ import FAQ from './pages/FAQ';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
 import { MessageCircle } from 'lucide-react';
-import PromoPopup from './components/PromoPopup';
 
 function App() {
   return (
@@ -34,7 +33,6 @@ function App() {
         </main>
         <Footer />
         <Toaster position="top-right" />
-        <PromoPopup />
         
         {/* WhatsApp Floating Button */}
         <a
