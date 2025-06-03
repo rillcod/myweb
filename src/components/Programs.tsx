@@ -18,7 +18,7 @@ const Programs: React.FC = () => {
       title: "Scratch Programming",
       description: "Create Your Own Cartoons and Games! Make fun animations and games with colorful blocks.",
       color: "from-orange-400 to-orange-600",
-      animation: "animate-bounce"
+      animation: "animate-float"
     },
     {
       id: 'web-development',
@@ -26,7 +26,7 @@ const Programs: React.FC = () => {
       title: "HTML/CSS Programming",
       description: "Build Your Own Websites! Create colorful web pages that everyone can see online.",
       color: "from-purple-400 to-purple-600",
-      animation: "animate-spin-slow"
+      animation: "animate-float"
     },
     {
       id: 'python-programming',
@@ -84,7 +84,7 @@ const Programs: React.FC = () => {
                 <div className="flex flex-col sm:flex-row gap-3">
                   <HashLink 
                     to="/student-registration#student-registration-top" 
-                    className="inline-flex items-center justify-center px-6 py-3 bg-[#FF914D] text-white rounded-full hover:bg-[#e67e3d] transform transition-all duration-300 hover:scale-105 hover:shadow-lg font-bold"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-[#FF914D] text-white rounded-full hover:bg-[#e67e3d] transform transition-all duration-300 hover:scale-105 hover:shadow-lg font-bold animate-pulse"
                   >
                     Enroll Now
                   </HashLink>
@@ -106,10 +106,6 @@ const Programs: React.FC = () => {
           animation: float 3s ease-in-out infinite;
         }
         
-        .animate-spin-slow {
-          animation: spin 8s linear infinite;
-        }
-        
         .animate-slide {
           animation: slide 3s ease-in-out infinite;
         }
@@ -121,11 +117,6 @@ const Programs: React.FC = () => {
         @keyframes float {
           0%, 100% { transform: translateY(0); }
           50% { transform: translateY(-10px); }
-        }
-        
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
         }
         
         @keyframes slide {
