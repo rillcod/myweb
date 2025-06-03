@@ -1,27 +1,47 @@
 import React from 'react';
-import { Lightbulb, Code, Users, Brain } from 'lucide-react';
+import { Lightbulb, Code, Users, Brain, Rocket, Star, Target, BookOpen } from 'lucide-react';
 
 const Benefits: React.FC = () => {
   const benefits = [
     {
       icon: <Lightbulb className="w-12 h-12 text-orange-500" />,
       title: "Practical Learning",
-      description: "Students learn by doing, working on real projects and building their portfolio from day one."
+      description: "Students learn by doing, working on real projects and building their portfolio from day one. Our hands-on approach ensures better understanding and retention."
     },
     {
       icon: <Code className="w-12 h-12 text-orange-500" />,
       title: "Industry-Relevant Skills",
-      description: "Our curriculum is constantly updated to match current industry standards and practices."
+      description: "Our curriculum is constantly updated to match current industry standards and practices, preparing students for real-world technology careers."
     },
     {
       icon: <Users className="w-12 h-12 text-orange-500" />,
       title: "Small Class Sizes",
-      description: "Maximum attention and support with our small group learning environment."
+      description: "Maximum attention and support with our small group learning environment. Each student gets personalized guidance and feedback."
     },
     {
       icon: <Brain className="w-12 h-12 text-orange-500" />,
       title: "Critical Thinking",
-      description: "Develop problem-solving skills and computational thinking abilities."
+      description: "Develop problem-solving skills and computational thinking abilities through challenging projects and exercises."
+    },
+    {
+      icon: <Rocket className="w-12 h-12 text-orange-500" />,
+      title: "Innovation Focus",
+      description: "Encourage creativity and innovative thinking through project-based learning and open-ended challenges."
+    },
+    {
+      icon: <Star className="w-12 h-12 text-orange-500" />,
+      title: "Expert Instructors",
+      description: "Learn from experienced professionals who are passionate about teaching and technology education."
+    },
+    {
+      icon: <Target className="w-12 h-12 text-orange-500" />,
+      title: "Goal-Oriented Learning",
+      description: "Clear learning objectives and milestones help students track their progress and achieve their goals."
+    },
+    {
+      icon: <BookOpen className="w-12 h-12 text-orange-500" />,
+      title: "Comprehensive Resources",
+      description: "Access to quality learning materials, online resources, and practice exercises for continued learning."
     }
   ];
 

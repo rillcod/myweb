@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { Code, Facebook, Instagram, Twitter, Mail, Phone } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -47,16 +47,40 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/#about" className="text-gray-300 hover:text-white transition-colors duration-300">About Us</Link>
+                <HashLink 
+                  smooth 
+                  to="/#about" 
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  About Us
+                </HashLink>
               </li>
               <li>
-                <Link to="/#programs" className="text-gray-300 hover:text-white transition-colors duration-300">Programs</Link>
+                <HashLink 
+                  smooth 
+                  to="/#programs" 
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  Programs
+                </HashLink>
               </li>
               <li>
-                <Link to="/#benefits" className="text-gray-300 hover:text-white transition-colors duration-300">Benefits</Link>
+                <HashLink 
+                  smooth 
+                  to="/#benefits" 
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  Benefits
+                </HashLink>
               </li>
               <li>
-                <Link to="/#contact" className="text-gray-300 hover:text-white transition-colors duration-300">Contact</Link>
+                <HashLink 
+                  smooth 
+                  to="/#contact" 
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  Contact
+                </HashLink>
               </li>
             </ul>
           </div>
@@ -65,19 +89,49 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-6">Registration</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/school-registration" className="text-gray-300 hover:text-white transition-colors duration-300">School Registration</Link>
+                <HashLink 
+                  smooth 
+                  to="/school-registration#school-registration-top" 
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  School Registration
+                </HashLink>
               </li>
               <li>
-                <Link to="/student-registration" className="text-gray-300 hover:text-white transition-colors duration-300">Student Registration</Link>
+                <HashLink 
+                  smooth 
+                  to="/student-registration#student-registration-top" 
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  Student Registration
+                </HashLink>
               </li>
               <li>
-                <Link to="/faq" className="text-gray-300 hover:text-white transition-colors duration-300">FAQ</Link>
+                <HashLink 
+                  smooth 
+                  to="/faq" 
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  FAQ
+                </HashLink>
               </li>
               <li>
-                <Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors duration-300">Privacy Policy</Link>
+                <HashLink 
+                  smooth 
+                  to="/privacy-policy" 
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  Privacy Policy
+                </HashLink>
               </li>
               <li>
-                <Link to="/terms" className="text-gray-300 hover:text-white transition-colors duration-300">Terms & Conditions</Link>
+                <HashLink 
+                  smooth 
+                  to="/terms" 
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  Terms & Conditions
+                </HashLink>
               </li>
             </ul>
           </div>
