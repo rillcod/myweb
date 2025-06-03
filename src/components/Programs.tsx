@@ -1,18 +1,9 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
-import { Monitor, Cat, Globe, Palette, Bot, Rocket } from 'lucide-react';
+import { Monitor, Cat, Globe, Palette, Bot } from 'lucide-react';
 
 const Programs: React.FC = () => {
   const programs = [
-    {
-      id: 'jss3-tech-academy',
-      icon: <Rocket className="w-12 h-12 text-indigo-600" />,
-      title: "JSS3 Tech Academy",
-      description: "Special 12-week intensive program for JSS3 graduates. Launch your tech journey with hands-on training in programming, digital skills, and career preparation.",
-      color: "from-indigo-400 to-indigo-600",
-      animation: "animate-float",
-      featured: true
-    },
     {
       id: 'ict-fundamentals',
       icon: <Monitor className="w-12 h-12 text-blue-600" />,
@@ -21,7 +12,46 @@ const Programs: React.FC = () => {
       color: "from-blue-400 to-blue-600",
       animation: "animate-float"
     },
-    // ... (rest of the existing programs)
+    {
+      id: 'scratch-programming',
+      icon: <Cat className="w-12 h-12 text-orange-600" />,
+      title: "Scratch Programming",
+      description: "Create Your Own Cartoons and Games! Make fun animations and games with colorful blocks.",
+      color: "from-orange-400 to-orange-600",
+      animation: "animate-float"
+    },
+    {
+      id: 'web-development',
+      icon: <Globe className="w-12 h-12 text-purple-600" />,
+      title: "HTML/CSS Programming",
+      description: "Build Your Own Websites! Create colorful web pages that everyone can see online.",
+      color: "from-purple-400 to-purple-600",
+      animation: "animate-float"
+    },
+    {
+      id: 'python-programming',
+      icon: <span className="text-3xl">🐍</span>,
+      title: "Python Programming",
+      description: "Code with the Friendly Python Snake! Learn the coding language that powers YouTube and Instagram.",
+      color: "from-green-400 to-green-600",
+      animation: "animate-float"
+    },
+    {
+      id: 'web-design',
+      icon: <Palette className="w-12 h-12 text-pink-600" />,
+      title: "Web Design",
+      description: "Make Beautiful Web Pages! Design amazing websites that look awesome on phones and computers.",
+      color: "from-pink-400 to-pink-600",
+      animation: "animate-float"
+    },
+    {
+      id: 'robotics',
+      icon: <Bot className="w-12 h-12 text-cyan-600" />,
+      title: "Robotics Programming",
+      description: "Build and Control Cool Robots! Create robots that can move, light up, and follow your commands.",
+      color: "from-cyan-400 to-cyan-600",
+      animation: "animate-float"
+    }
   ];
 
   return (
@@ -34,47 +64,9 @@ const Programs: React.FC = () => {
           </p>
           <div className="w-20 h-2 bg-[#FF914D] mx-auto rounded-full mt-4"></div>
         </div>
-
-        {/* Featured Program */}
-        <div className="mb-12">
-          {programs.filter(p => p.featured).map((program) => (
-            <div 
-              key={program.id}
-              className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300"
-            >
-              <div className="p-8 text-white">
-                <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-6">
-                    {program.icon}
-                  </div>
-                  <div>
-                    <h3 className="text-3xl font-bold mb-2">{program.title}</h3>
-                    <p className="text-lg opacity-90">Registration Now Open!</p>
-                  </div>
-                </div>
-                <p className="text-xl mb-6">{program.description}</p>
-                <div className="flex flex-wrap gap-4">
-                  <HashLink 
-                    to="/student-registration#student-registration-top" 
-                    className="inline-flex items-center justify-center px-6 py-3 bg-white text-indigo-600 rounded-full hover:bg-opacity-90 transform transition-all duration-300 hover:scale-105 font-bold text-lg"
-                  >
-                    Enroll Now
-                  </HashLink>
-                  <HashLink 
-                    to={`/programs/${program.id}#program-details-top`}
-                    className="inline-flex items-center justify-center px-6 py-3 bg-indigo-700 text-white rounded-full hover:bg-indigo-800 transform transition-all duration-300 hover:scale-105 font-bold text-lg"
-                  >
-                    Learn More
-                  </HashLink>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
         
-        {/* Regular Programs Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {programs.filter(p => !p.featured).map((program) => (
+          {programs.map((program) => (
             <div 
               key={program.id}
               className={`bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl ${program.animation}`}
@@ -92,7 +84,7 @@ const Programs: React.FC = () => {
                 <div className="flex flex-col sm:flex-row gap-3">
                   <HashLink 
                     to="/student-registration#student-registration-top" 
-                    className="inline-flex items-center justify-center px-6 py-3 bg-[#FF914D] text-white rounded-full hover:bg-[#e67e3d] transform transition-all duration-300 hover:scale-105 hover:shadow-lg font-bold"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-[#FF914D] text-white rounded-full hover:bg-[#e67e3d] transform transition-all duration-300 hover:scale-105 hover:shadow-lg font-bold animate-pulse"
                   >
                     Enroll Now
                   </HashLink>
