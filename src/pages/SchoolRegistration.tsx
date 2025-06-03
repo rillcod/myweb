@@ -88,7 +88,7 @@ const SchoolRegistration: React.FC = () => {
 
   if (formSubmitted) {
     return (
-      <div className="min-h-screen bg-gray-50 pt-24 pb-16">
+      <div className="min-h-screen pt-24 pb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50 animate-gradient">
         <div className="container mx-auto px-4">
           <div className="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8 text-center">
             <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -111,15 +111,15 @@ const SchoolRegistration: React.FC = () => {
   }
 
   return (
-    <div id="school-registration-top" className="min-h-screen bg-gray-50 pt-24 pb-16">
+    <div id="school-registration-top" className="min-h-screen pt-24 pb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50 animate-gradient">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">School Registration</h1>
           
-          <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* School Information */}
-              <div className="bg-blue-50 p-6 rounded-lg mb-8">
+              <div className="bg-blue-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">School Information</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -129,7 +129,7 @@ const SchoolRegistration: React.FC = () => {
                       name="school_name"
                       value={formData.school_name}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -139,7 +139,7 @@ const SchoolRegistration: React.FC = () => {
                       name="school_type"
                       value={formData.school_type}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     >
                       <option value="">Select school type</option>
@@ -155,7 +155,7 @@ const SchoolRegistration: React.FC = () => {
                       name="principal_name"
                       value={formData.principal_name}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -166,7 +166,7 @@ const SchoolRegistration: React.FC = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -177,7 +177,7 @@ const SchoolRegistration: React.FC = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -188,7 +188,7 @@ const SchoolRegistration: React.FC = () => {
                       value={formData.address}
                       onChange={handleChange}
                       rows={3}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     ></textarea>
                   </div>
@@ -199,7 +199,7 @@ const SchoolRegistration: React.FC = () => {
                       name="lga"
                       value={formData.lga}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -210,7 +210,7 @@ const SchoolRegistration: React.FC = () => {
                       name="state"
                       value={formData.state}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -220,7 +220,7 @@ const SchoolRegistration: React.FC = () => {
                       name="age_groups"
                       value={formData.age_groups}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     >
                       <option value="">Select age group</option>
@@ -234,7 +234,7 @@ const SchoolRegistration: React.FC = () => {
               </div>
 
               {/* Contact Person Information */}
-              <div className="bg-green-50 p-6 rounded-lg mb-8">
+              <div className="bg-green-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Contact Person Information</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -244,7 +244,7 @@ const SchoolRegistration: React.FC = () => {
                       name="contact_name"
                       value={formData.contact_name}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -255,7 +255,7 @@ const SchoolRegistration: React.FC = () => {
                       name="contact_position"
                       value={formData.contact_position}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -266,7 +266,7 @@ const SchoolRegistration: React.FC = () => {
                       name="contact_phone"
                       value={formData.contact_phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -277,7 +277,7 @@ const SchoolRegistration: React.FC = () => {
                       name="contact_email"
                       value={formData.contact_email}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -288,14 +288,14 @@ const SchoolRegistration: React.FC = () => {
                       name="contact_whatsapp"
                       value={formData.contact_whatsapp}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                     />
                   </div>
                 </div>
               </div>
 
               {/* Program Requirements */}
-              <div className="bg-purple-50 p-6 rounded-lg mb-8">
+              <div className="bg-purple-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Program Requirements</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -306,7 +306,7 @@ const SchoolRegistration: React.FC = () => {
                       value={formData.student_count}
                       onChange={handleChange}
                       min="1"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -318,7 +318,7 @@ const SchoolRegistration: React.FC = () => {
                       value={formData.computers_available}
                       onChange={handleChange}
                       min="0"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -330,7 +330,7 @@ const SchoolRegistration: React.FC = () => {
                       value={formData.preferred_schedule}
                       onChange={handleChange}
                       placeholder="E.g., Mondays and Wednesdays, 10am-12pm"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -340,7 +340,7 @@ const SchoolRegistration: React.FC = () => {
                       name="duration"
                       value={formData.duration}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     >
                       <option value="">Select duration</option>
@@ -357,7 +357,7 @@ const SchoolRegistration: React.FC = () => {
                       name="start_date"
                       value={formData.start_date}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -365,7 +365,7 @@ const SchoolRegistration: React.FC = () => {
               </div>
 
               {/* Facility Information */}
-              <div className="bg-yellow-50 p-6 rounded-lg mb-8">
+              <div className="bg-yellow-50/50 p-6 rounded-lg mb-8 transform transition-all duration-300 hover:scale-[1.01]">
                 <h2 className="text-xl font-semibold text-gray-800 mb-6">Facility Information</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -402,7 +402,7 @@ const SchoolRegistration: React.FC = () => {
                       name="internet_status"
                       value={formData.internet_status}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     >
                       <option value="">Select status</option>
@@ -419,7 +419,7 @@ const SchoolRegistration: React.FC = () => {
                       name="power_status"
                       value={formData.power_status}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     >
                       <option value="">Select status</option>
@@ -437,7 +437,7 @@ const SchoolRegistration: React.FC = () => {
                       value={formData.expected_students}
                       onChange={handleChange}
                       min="1"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       required
                     />
                   </div>
@@ -448,7 +448,7 @@ const SchoolRegistration: React.FC = () => {
                       value={formData.additional_space}
                       onChange={handleChange}
                       rows={3}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       placeholder="Describe any additional space available for equipment or activities"
                     ></textarea>
                   </div>
@@ -459,7 +459,7 @@ const SchoolRegistration: React.FC = () => {
                       value={formData.special_requirements}
                       onChange={handleChange}
                       rows={3}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-sm bg-white/70"
                       placeholder="Any special requirements or requests"
                     ></textarea>
                   </div>
