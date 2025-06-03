@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
       </div>
       
       {/* Student with Computer */}
-      <div className="absolute top-20 right-0 lg:right-20 w-1/3 max-w-xs md:max-w-sm lg:max-w-md h-auto z-2">
+      <div className="absolute top-40 left-1/2 transform -translate-x-1/2 w-1/3 max-w-xs md:max-w-sm lg:max-w-md h-auto z-2">
         <div className="relative w-full h-full">
           <img 
             src="https://images.pexels.com/photos/8535230/pexels-photo-8535230.jpeg"
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
       
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-10 mt-[400px] md:mt-[300px]">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
             Inspiring Young Minds Through Technology

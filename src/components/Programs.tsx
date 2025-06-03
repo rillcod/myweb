@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import { Monitor, Cat, Globe, Palette, Bot } from 'lucide-react';
 
 const Programs: React.FC = () => {
@@ -73,15 +74,23 @@ const Programs: React.FC = () => {
               
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">{program.title}</h3>
-                <p className="text-gray-600">{program.description}</p>
+                <p className="text-gray-600 mb-6">{program.description}</p>
                 
                 <div className="mt-6 flex justify-between items-center">
-                  <HashLink 
-                    to="/student-registration#student-registration-top" 
-                    className="inline-flex items-center justify-center px-4 py-2 bg-[#FF914D] text-white rounded-full hover:bg-[#e67e3d] transition-colors"
-                  >
-                    Enroll Now
-                  </HashLink>
+                  <div className="space-x-2">
+                    <HashLink 
+                      to="/student-registration#student-registration-top" 
+                      className="inline-flex items-center justify-center px-4 py-2 bg-[#FF914D] text-white rounded-full hover:bg-[#e67e3d] transition-colors"
+                    >
+                      Enroll Now
+                    </HashLink>
+                    <Link 
+                      to={`/programs/${program.id}`}
+                      className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
+                    >
+                      Learn More
+                    </Link>
+                  </div>
                   <div className="flex space-x-1">
                     {[...Array(5)].map((_, i) => (
                       <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
