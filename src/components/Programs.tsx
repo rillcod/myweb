@@ -84,7 +84,7 @@ const Programs: React.FC = () => {
                     Enroll Now
                   </HashLink>
                   <Link 
-                    to={`/programs/${program.id}`}
+                    to={`/programs/${program.id}#program-details-top`}
                     className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transform transition-all duration-300 hover:scale-105 hover:shadow-lg font-bold"
                   >
                     Learn More
